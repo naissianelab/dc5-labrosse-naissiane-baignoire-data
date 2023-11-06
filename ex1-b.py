@@ -20,10 +20,9 @@ for caractere in phrase_utilisateur:
 
 print ("Voici ta phrase en minusucles : ", phrase_minuscules)
 
-nombre_mots = 1
+import re
 
-for caractere in phrase_utilisateur:
-    if caractere == ' ':
-        nombre_mots += 1
+mots = re.findall(r'\b\w+\b|\S', phrase_utilisateur)
+nombre_mots = len(mots)
 
-print("Nombre de mots dans la phrase : ", nombre_mots)
+print("Voici le nombre de mots dans ta phrase : ", nombre_mots)
