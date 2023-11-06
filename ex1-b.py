@@ -25,4 +25,4 @@ import re
 mots = re.findall(r'\b\w+\b|\S', phrase_utilisateur)
 nombre_mots = len(mots)
 
-print("Nombre de mots dans ta phrase : ", nombre_mots)
+print("Voici le nombre de mots dans ta phrase : ", nombre_mots)
