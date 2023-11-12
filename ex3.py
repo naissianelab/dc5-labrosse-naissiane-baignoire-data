@@ -7,7 +7,6 @@ if not isinstance(cout_campagne, (int, float)):
     print("Erreur : Le coût de la campagne n'est pas un nombre.")
     sys.exit()
 
-# Vérification si revenu_campagne est un nombre
 if not isinstance(revenu_campagne, (int, float)):
     print("Erreur : Les revenus de la campagne ne sont pas un nombre.")
     sys.exit()
